@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <iframe height="0" width="0" src="song.mp3" frameborder="0" allowfullscreen></iframe>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div id="fadeButtonContainer"></div>
+    <div id="snow_fall"></div>
+    <div class="bubble">
+        <img src="bubble.png" alt="">
+        <img src="bubble.png" alt="">
+        <img src="bubble.png" alt="">
+        <img src="bubble.png" alt="">
+        <img src="bubble.png" alt="">
+        <img src="bubble.png" alt="">
+        <img src="bubble.png" alt="">
+        <img src="bubble.png" alt="">
+        <img src="bubble.png" alt="">
+    </div>
+    
+<script>
+    // Function to create a fade-in button
+    function createFadeInButton() {
+      // Create a button element
+      var button = document.createElement("button");
+      button.innerText = "Click Me"; // You can set the button text
+      button.style.opacity = 0; // Set initial opacity to 0 for fade-in effect
+      button.addEventListener("click", function() {
+        alert("Button Clicked!"); // You can replace this with your desired action
+      });
+  
+      // Append the button to the container
+      document.getElementById("fadeButtonContainer").appendChild(button);
+  
+      // Apply fade-in effect after 5 seconds
+      setTimeout(function() {
+        button.style.transition = "opacity 1s";
+        button.style.opacity = 1;
+      }, 5000);
+    }
+  
+    // Call the function to create the fade-in button
+    createFadeInButton();
+  </script>
+  
+    <script text="text/javascript" src="particles.js"></script>
+    <script text="text/javascript" src="app.js"></script>
+</body>
+
+</html>

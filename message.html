@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Webpage</title>
+</head>
+<body>
+
+    <h1>Welcome to Another Webpage!</h1>
+
+    <!-- Display the stored name from localStorage -->
+    <p>Stored Name: <span id="storedName"></span></p>
+
+    <script src="script.js"></script>
+    <script>
+        // Set the stored name in the element
+        document.getElementById("storedName").textContent = getStoredName();
+    </script>
+</body>
+</html>
